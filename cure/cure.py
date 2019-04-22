@@ -159,9 +159,10 @@ for i in range(k):
     lenL.append(len(results[i]))
 print(lenL)
 plt.title("Cluster Number")
-plt.bar(range(50),lenL)
 plt.xlabel("Clusters")
 plt.ylabel("Number")
+plt.bar(range(20),lenL)
+plt.xticks(np.arange(0, 20, 1))
 plt.savefig("Cluster Result.jpg")
 
 
